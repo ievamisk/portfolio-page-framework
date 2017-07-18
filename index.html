@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+        <script type="text/javascript" src="javascript/javascript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="javascript/angular.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400" rel="stylesheet">
+        <link rel="stylesheet" href="ionicons-2.0.1/css/ionicons.min.css">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/circle.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body ng-app="portfolio">
+        
+        <div class="navbar-fixed">
+            <nav class="black">
+                <div class="container nav-wrapper">
+                  <a href="index.html" class="brand-logo">I.M.</a>
+                  <a href="" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a block="#home">HOME</a></li>
+                    <li><a block="#aboutme-block">ABOUT ME</a></li>
+                    <li><a block="#experience-block">EXPERIENCE</a></li>
+                    <li><a block="#education-block">EDUCATION</a></li>
+                    <li><a block="#skills-block">SKILLS</a></li>
+                    <li><a block="#projects-block">MY WORKS</a></li>
+                    <li><a block="#contacts-block">CONTACT</a></li>
+                  </ul>
+                  <ul class="side-nav" id="slide-out">
+                    <li><a block="#home">HOME</a></li>
+                    <li><a block="#aboutme-block">ABOUT ME</a></li>
+                    <li><a block="#experience-block">EXPERIENCE</a></li>
+                    <li><a block="#education-block">EDUCATION</a></li>
+                    <li><a block="#skills-block">SKILLS</a></li>
+                    <li><a block="#projects-block">MY WORKS</a></li>
+                    <li><a block="#contacts-block">CONTACT</a></li>
+                  </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <div id="home" class="parallax-container">
+            <div class="parallax"><img id="banner" src="images/IMG_30023.jpg"></div>
+            <h2 id="banner-name" class="white-text center-align">HI, I'M IEVA MIŠKINYTĖ</h2>
+            <h5 class="white-text center-align">Software Developer</h5>
+        </div>
+
+        <div id="aboutme-block" class="grey lighten-5">
+            <h5 id="name" class="block-name center-align">ABOUT ME</h5>
+            <div class="row container s12 center-align">
+                <div class="card">
+                    <div class="card-content"> 
+                        <img id="me" src="images/me.jpg" class="circle responsive-img center-align">
+                        <div class = "row">
+                            <div class="col s10 offset-s1 m8 offset-m2">
+                                <span id="aboutme-desc">
+                                    Šiuo metu studijuoju Vilniaus Kolegijoje elektronikos ir informatikos fakultete - programų sistemas, antrame kurse. 2016 metais dalyvavau 2 mėnesius trukusioje Swedbank IT akademijoje, kurioje įgijau JAVA bei objektinio programavimo pagrindus, taip pat mokiausi testavimo (rankinio, automatinio), UNIT testų rašymo. Įgijau JCL( Mainframe Job Control Language) rašymo pagrindus. Taip pat mokėmės dirbant vadovautis Agile metodologija, dirbti komandoje. Nuo 2016 metų rugsėjo mėnesio dalyvauju Erasmus + projekte kuriant rizikų valdymo sistemą (projekto puslapis: http://www.perm.lv/) . Naudojame React, Semantic, Redux technologijas. Dirbu front-end dalyje. Esu motyvuota mokytis ir dirbti. Noriu įgyti praktikos dirbant įmonėje ir kuriant realius projektus bei pradėti karjerą IT srityje.
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <a id="download" class="waves-effect waves-light btn black">Download CV</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="experience-block" class="grey lighten-2">
+        <h5 class="block-name center-align">EXPERIENCE</h5>
+            <div class="timeline container">
+              <div class="timeline-event">
+                <div class="card timeline-content">
+                  <div class="card-content">
+                    <h6 class="center-align">February, 2017 - March, 2017</h6>
+                    <hr>
+                    <span class="card-title center-align">PERM Erasmus+ Project</span>
+                    <h6 class="center-align">Developer</h6>
+                  </div>
+                </div>
+                <div class="timeline-badge black white-text"><i class="material-icons">work</i></div>
+              </div>
+              <div class="timeline-event">
+                <div class="card timeline-content">
+                  <div class="card-content">
+                    <h6 class="center-align">February, 2016 - March, 2016</h6>
+                    <hr>
+                    <span class="card-title center-align">Swedbank IT Academy</span>
+                    <h6 class="center-align">Trainee</h6>
+                  </div>
+
+                </div>
+                <div class="timeline-badge black white-text"><i class="material-icons">work</i></div>
+              </div>
+            </div>
+        </div>
+        
+        <div id="education-block" class="grey lighten-5">
+            <h5 class="block-name center-align">EDUCATION</h5>
+            <div class="timeline container">
+              <div class="timeline-event">
+                <div class="card timeline-content">
+                  <div class="card-content">
+                    <h6 class="center-align">September, 2015 - Present</h6>
+                    <hr> 
+                    <span class="card-title center-align">Vilnius University of Applied Sciences</span>
+                    <h6 class="center-align">Professional Bachelor of Software engineering</h6>
+                  </div>
+                </div>
+                <div class="timeline-badge black white-text"><i class="material-icons">school</i></div>
+              </div>
+              <div class="timeline-event">
+                <div class="card timeline-content">
+                  <div class="card-content">
+                    <h6 class="center-align">September, 2006 - May, 2014</h6>
+                    <hr>
+                    <span class="card-title center-align">Vilnius Žvėrynas Gymnasium</span>
+                    <h6 class="center-align">Highschool</h6>
+                  </div>
+                </div>
+                  
+                <div class="timeline-badge black white-text"><i class="material-icons">school</i></div>
+              </div>
+            </div>
+        </div>
+        
+        
+        <div id="skills-block" class="grey lighten-2">
+            <h5 class="block-name center-align">MY SKILLS</h5>
+            <div class="row container">
+                <div class="col s6 m3">
+                    <div class="skill-center">
+                        <div class="c100 p60 ">
+                            <span>HTML</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m3">
+                    <div class="skill-center">
+                        <div class="c100 p60">
+                            <span>CSS</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m3">
+                    <div class="skill-center">
+                        <div class="c100 p10">
+                            <span>JS</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m3">
+                    <div class="skill-center">
+                        <div class="c100 p60">
+                            <span>C#</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row container">
+                <div class="col s6 m3 ">
+                    <div class="skill-center">
+                        <div class="c100 p30">
+                            <span>C</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m3">
+                    <div class="skill-center">
+                        <div class="c100 p50">
+                            <span>C++</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m3">
+                    <div class="skill-center">
+                        <div class="c100 p55">
+                            <span>PS</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m3">
+                    <div class="skill-center">
+                        <div class="c100 p35">
+                            <span>AI</span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="projects-block" class="grey lighten-5">
+            <h5 class="block-name center-align">MY WORKS</h5>
+            <div class="row container" ng-controller="projects">
+                <div class="col s12 m6 l4" ng-repeat="project in projects_arr"> 
+                    <div class="card sticky-action">
+                        <div class="card-image">
+                            <a href="#modal"><img src="{{ project.image }}"></a>
+                            <span class="card-title" >{{ project.title }}</span>
+                        </div>
+                        
+
+                         
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <h4>{{ project.title }}</h4>
+              <p>{{ project.full-description }}</p>
+            </div>
+            <div class="modal-footer">
+              yey
+            </div>
+        </div>
+            
+        
+        <div id="contacts-block" class="grey lighten-2">
+            <h5 class="block-name center-align">CONTACT</h5>
+            <div class="row container">
+                    <div class="col s12 m4 data">
+                        <div class="card">
+                            <div class="card-content data center-align">
+                                <span class="card-title">
+									<i class="material-icons white black-text">mail</i>
+									<p>SAY HELLO</p>
+								</span>
+                                    <ul class="info_box">
+                                        <li><p >Phone: +37064882747</p></li>
+                                        <li><p>Email: ieva.misk@gmail.com</p></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 data">
+                        <div class="card">
+                            <div class="card-content data center-align">
+                                <span class="card-title">
+									<i class="material-icons white black-text">map</i>
+									<p>WHERE TO MEET</p>
+								</span>
+                                    <ul class="info_box">
+                                        <li><p>Vilnius, Lithuania</p></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 data">
+                        <div class="card">
+                            <div class="card-content data center-align">
+                                <span class="card-title">
+									<i class="material-icons white black-text ">people</i>
+									<p>I'M SOCIAL</p>
+								</span>
+                                <div class="">
+                                    <a class="black-text" href="https://www.facebook.com/ieva.misk" target="_blank">
+                                        <i class="ion-social-facebook "></i>
+                                    </a>
+                                    <a class="black-text" href="https://www.instagram.com/ievamisk/" target="_blank">
+                                        <i class="ion-social-instagram"></i>
+                                    </a>
+                                    <a class="black-text" href="https://www.pinterest.com/ievamiskinytee/" target="_blank">
+                                        <i class="ion-social-pinterest"></i>
+                                    </a>
+                                    <a class="black-text" href="https://www.linkedin.com/in/ieva-mi%C5%A1kinyt%C4%97-856b61117/" target="_blank">
+                                        <i class="ion-social-linkedin"></i>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            <div class="row container">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title center-align">SEND ME A MESSAGE</span>
+                            <form class="row">
+                                <div class="input-field col s10 offset-s1">
+                                    <input placeholder="FIRST NAME" id="first_name" type="text">
+                                </div>
+
+                                <div class="input-field col s10 offset-s1">
+                                    <input placeholder="EMAIL" id="email" type="email">
+                                </div>
+
+                                <div class="input-field col s10 offset-s1">
+                                    <input placeholder="SUBJECT" id="subject" type="text">
+                                </div>
+
+                                <div class="input-field col s10 offset-s1">
+                                    <textarea placeholder="MESSAGE" type="text" id="message" class="materialize-textarea"></textarea>
+                                    <a id="send" class="waves-effect waves-light btn black">Send</a>
+                                </div>
+
+                            </form> 
+                        </div>
+                    </div>            
+                </div> 
+            </div>
+            </div>
+        
+        <footer class="page-footer black">
+          <div class="row container s12 center-align">
+              <div class="col s12 ">
+                <a href="https://www.facebook.com/ieva.misk" target="_blank" class="white-text col s12 m3">FACEBOOK</a>
+                <a href="https://www.linkedin.com/in/ieva-mi%C5%A1kinyt%C4%97-856b61117/" target="_blank" class="white-text col s12 m3">LINKEDIN</a>
+                <a href="https://www.instagram.com/ievamisk/" target="_blank" class="white-text col s12 m3">INSTAGRAM</a>
+                <a href="https://www.pinterest.com/ievamiskinytee/" target="_blank" class="white-text col s12 m3">PINTEREST</a>
+              </div>
+            </div>
+          <div class="footer-copyright">
+            <div class="container center-align">
+            Ieva Miškinytė © 2017 All rights reserved
+            </div>
+          </div>
+        </footer>
+      
+    </body>
+  </html>
